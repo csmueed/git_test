@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project by Chatgpt</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            background-color: navy;
+            color: whitesmoke;
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .item {
+            border: 2px solid gold;
+            text-align: center;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 0;
+        }
+        .logo {
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .nav {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        .search {
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item logo">LOGO</div>
+        <div class="item nav">Home</div>
+        <div class="item nav">Blog</div>
+        <div class="item nav">Contact</div>
+        <div class="item search">Search</div>
+    </div>
+</body>
+</html>
