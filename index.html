@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Practice</title>
+    <style>
+        .container {
+            background-color: yellow;
+            color: red;
+            /* list-style-type: none; */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 100px;
+        }
+        .container {
+         display: flex;
+        }
+        .item {
+            list-style-type: none;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            padding: 10px;
+            border: 3px solid black;
+            color: rgb(255, 255, 255);
+            background-color: rgb(2, 11, 92);
+            text-align: center;
+        }
+        .item1 {
+            flex-grow: 3;
+            flex-shrink: 0;
+        }
+
+        .main {
+            background-color: darkgreen;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+        .atom {
+            border: 5px solid black;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            text-align: center;
+            
+        }
+        .lorem {
+            background-color: yellow;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            padding: 20px;
+            border: 5px solid red;
+            margin: 5px;
+        }
+        .ispum {
+            flex-direction: column;
+            padding: 10px;
+            margin: 5px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            border: 5px solid navy;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="item item1">Home</li>
+                <li class="item">Course</li>
+                <li class="item">Blog</li>
+                <li class="item">Contact</li>
+                <li class="item">About</li>
+            </ul>
+            <hr>
+        </nav>
+        <div class="main">
+            <div class="atom">one</div>
+            <div class="atom">two</div>
+        </div>
+        <hr>
+
+        <div class="lorem">
+            <div class="ispum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aut voluptatibus error reprehenderit nobis? Illum quod velit necessitatibus, enim animi similique veniam esse cupiditate iure, quis explicabo praesentium corporis sunt.</div>
+            <div class="ispum">aut quam, sequi veniam fugit harum autem, odit accusamus aliquam nemo minus error recusandae? Quibusdam iusto veritatis maxime, corporis tenetur sed perferendis consectetur dignissimos amet exercitationem, mollitia earum enim adipisci laudantium in natus soluta?</div>
+        </div>
+    </header>
+</body>
+</html>
